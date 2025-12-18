@@ -10,3 +10,5 @@ available Kaggle used cars dataset and is intended for educational and non-comme
 Original data source:
 - Kaggle Used Cars Dataset (derived subset)
 - Used in accordance with course and dataset licensing terms
+
+Modeling Report can be found => Used Cars Report Markdown File
