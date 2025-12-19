@@ -11,4 +11,5 @@ Original data source:
 - Kaggle Used Cars Dataset (derived subset)
 - Used in accordance with course and dataset licensing terms
 
+Notebook found here ==> https://github.com/RGConsulting12/Used_Cars/blob/main/Used_Cars-Regression.ipynb
 Modeling Report can be found => Used Cars Report Markdown File
