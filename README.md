@@ -31,19 +31,19 @@ A progressive modeling approach was used:
 Key Findings:
 
 Price decreases are most strongly associated with:
-	•	Poor vehicle condition (fair or worse)
-	•	High mileage
-	•	Older model years
-	•	Non-clean titles
-	•	Lower engine specifications
+- Poor vehicle condition (fair or worse)
+- High mileage
+- Older model years
+- Non-clean titles
+- Lower engine specifications
 
 Price increases are driven by:
-	•	Newer vehicles
-	•	Diesel fuel type
-	•	Strong brand reputation (e.g., Toyota, Porsche)
-	•	High-demand models (e.g., Wrangler, Corvette)
-	•	Clean titles
-	•	Higher engine capacity
+- Newer vehicles
+- Diesel fuel type
+- Strong brand reputation (e.g., Toyota, Porsche)
+- High-demand models (e.g., Wrangler, Corvette)
+- Clean titles
+- Higher engine capacity
 
 Across all models, the most predictive feature combinations consistently included vehicle age, mileage, condition, brand, model, and mechanical attributes.
 
@@ -61,10 +61,10 @@ The KNN model achieved the lowest prediction error, indicating strong local simi
 Recommendations:
 
 Ridge regression on log-transformed prices was selected as the final recommended model. While slightly less accurate than KNN, Ridge offers:
-	•	Near-optimal predictive performance
-	•	Excellent scalability to large datasets
-	•	Robust handling of correlated categorical features
-	•	Clear operational feasibility for dealership pricing systems
+- Near-optimal predictive performance
+- Excellent scalability to large datasets
+- Robust handling of correlated categorical features
+- Clear operational feasibility for dealership pricing systems
 
 Conclusion:
 
