@@ -20,15 +20,15 @@ Negative associations with price were identified primarily using the Lasso regre
 
 The strongest predictors associated with price decreases include:
 
-	•	Vehicle condition (Fair or worse)
+- Vehicle condition (Fair or worse)
 Vehicles listed in fair condition showed the largest negative coefficients, corresponding to approximately 40–50% lower prices relative to baseline condition categories.
-	•	High odometer readings
+- High odometer readings
 Mileage exhibited a consistent negative relationship with price. Higher mileage vehicles command lower prices even after controlling for age and model.
-	•	Older model years
+- Older model years
 Year was one of the strongest numeric predictors; older vehicles consistently reduced expected price.
-	•	Non-clean title status
+- Non-clean title status
 Vehicles without a clean title experienced a substantial price penalty, reflecting increased buyer risk.
-	•	Lower engine specifications
+- Lower engine specifications
 Fewer cylinders and lower performance configurations were associated with lower resale values.
 
 These results indicate that vehicle condition, mileage, age, and title quality are the dominant drivers of price depreciation in the used car market.
@@ -37,18 +37,17 @@ These results indicate that vehicle condition, mileage, age, and title quality a
 Q2: Which predictor variables contribute the largest positive effect on car price?
 
 Positive associations with price were identified through coefficient inspection of the Lasso model and corroborated by performance stability in Ridge regression.
-
-	•	Newer model years
+- Newer model years
 Year was one of the strongest positive predictors, reflecting standard depreciation curves.
-	•	Diesel fuel type
+- Diesel fuel type
 Diesel vehicles showed a significant price premium, likely due to durability and utility in trucks and commercial vehicles.
-	•	Brand effects (Manufacturer)
+- Brand effects (Manufacturer)
 Brands such as Toyota and Porsche exhibited strong positive price effects, reflecting reliability and luxury premiums.
-	•	Model-specific premiums
+- Model-specific premiums
 Certain models (e.g., Wrangler, Corvette) showed substantial positive coefficients, indicating strong resale demand.
-	•	Clean title status
+- Clean title status
 Clean titles were associated with meaningful price premiums.
-	•	Higher engine capacity (cylinders)
+- Higher engine capacity (cylinders)
 Vehicles with more cylinders tended to command higher prices, capturing performance and class effects.
 
 Given the positive pricing; signals were derived from a combination of the following: vehicle age, fuel type, brand reputation, model desirability, and mechanical capability.
@@ -58,12 +57,15 @@ Q3: Which feature combinations produce the most accurate predictions for commonl
 
 Model performance was evaluated using cross-validated RMSE on log(price) and translated into multiplicative dollar error for interpretability. The following results summarize model performance:
 
-      Model	       RMSE (log)	RMSE ($, multiplicative)
-KNN (log) 	       0.449	   0.567
-Ridge (log)  	   0.462	   0.588
-ElasticNet (log)	0.488	   0.629
-Lasso (log)	       0.499	   0.647
-Baseline Linear	   0.607	   0.835
+### Model Performance Comparison
+
+| Rank | Model            | RMSE (log) | RMSE ($, multiplicative) |
+|------|------------------|------------|--------------------------|
+| 1    | KNN (log)        | 0.449      | 0.567                    |
+| 2    | Ridge (log)      | 0.462      | 0.588                    |
+| 3    | ElasticNet (log) | 0.488      | 0.629                    |
+| 4    | Lasso (log)      | 0.499      | 0.647                    |
+| 5    | Baseline Linear  | 0.607      | 0.835                    |
 
 Best Performing Feature Combinations
 - Age + mileage + condition form the core predictive structure.
