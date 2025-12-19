@@ -66,9 +66,9 @@ Lasso (log)	       0.499	   0.647
 Baseline Linear	   0.607	   0.835
 
 Best Performing Feature Combinations
-	•	Age + mileage + condition form the core predictive structure.
-	•	Brand and model indicators significantly refine predictions within popular consumer price ranges.
-	•	Fuel type and engine specifications improve accuracy in mid- to high-price segments.
+- Age + mileage + condition form the core predictive structure.
+- Brand and model indicators significantly refine predictions within popular consumer price ranges.
+- Fuel type and engine specifications improve accuracy in mid- to high-price segments.
 
 The KNN model achieved the lowest overall error, indicating that local similarity among vehicles provides strong predictive signal. However, KNN required substantial computation time and lacked interpretability, making it unsuitable for large-scale deployment.
 
@@ -77,10 +77,10 @@ The Ridge regression model achieved nearly equivalent accuracy while remaining c
 Final Model Selection and Recommendation
 
 Although KNN produced the lowest raw error, Ridge regression on log-transformed prices was selected as the final recommended model due to:
-	•	Near-optimal predictive accuracy
-	•	Excellent scalability to large datasets
-	•	Robust handling of correlated categorical features
-	•	Operational feasibility for dealership pricing systems
+- Near-optimal predictive accuracy
+- Excellent scalability to large datasets
+- Robust handling of correlated categorical features
+- Operational feasibility for dealership pricing systems
 
 Conclusion:
 Used car pricing is best modeled using a combination of vehicle age, mileage, condition, brand, model, and mechanical attributes, with regularized linear models providing the optimal balance between accuracy, interpretability, and deployment readiness.
